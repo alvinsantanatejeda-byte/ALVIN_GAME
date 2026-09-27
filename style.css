@@ -1,0 +1,252 @@
+body {
+    margin: 0;
+    background-color: #020B18;
+    color: white;
+}
+
+.cabezera {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #06152A;
+    border-bottom: 1px solid #075EA8;
+}
+
+.cabezera h1 {
+    color: #FFFFFF;
+}
+
+.cabezera h1 ::first-line {
+    color: #008CFF;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: #008CFF;
+}
+
+.hero {
+    min-height: 550px;
+
+    display: flex;
+    align-items: center;
+
+    padding-left: 80px;
+
+    background-image:
+        linear-gradient(
+            90deg,
+            #020B18 5%,
+            rgba(2, 11, 24, 0.8) 35%,
+            rgba(2, 11, 24, 0.2) 75%
+        ),
+        url("juegp.jpeg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-contenido span {
+    font-size: 50px;
+}
+
+.hero h2 {
+    font-size: 50px;
+    margin: 10px 0;
+    max-width: 500px;
+}
+
+.hero h3 {
+    font-size: 65px;
+    color: #008CFF;
+    margin: 0 0 30px;
+}
+
+.hero button {
+    background-color: #008CFF;
+    color: white;
+
+    border: none;
+    border-radius: 30px;
+
+    padding: 16px 35px;
+
+    font-size: 18px;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.hero button:hover {
+    background-color: #0074D9;
+    transform: scale(1.05);
+}
+
+.juegos {
+    padding: 70px 50px;
+    background-color: #020B18;
+}
+
+.juegos > h2 {
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.contenedor-juegos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.juego {
+    background-color: #06152A;
+
+    border: 1px solid #075EA8;
+    border-radius: 15px;
+
+    padding: 20px;
+
+    transition: 0.3s;
+}
+
+.juego:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 140, 255, 0.35);
+}
+
+.juego img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.juego:hover img {
+    transform: scale(1.03);
+}
+
+.juego h3 {
+    color: white;
+    font-size: 23px;
+}
+
+.juego p {
+    color: #CBD5E1;
+}
+
+.juego strong {
+    display: block;
+
+    color: #008CFF;
+    font-size: 24px;
+
+    margin: 20px 0;
+}
+
+.juego button {
+    width: 100%;
+
+    padding: 12px;
+
+    background-color: #008CFF;
+    color: white;
+
+    border: none;
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+.juego button:hover {
+    background-color: #0074D9;
+}
+
+.juego h3 {
+    margin: 15px 0 8px;
+}
+
+.juego p {
+    margin: 0;
+}
+
+.juego strong {
+    margin: 20px 0;
+}
+
+.footer {
+    background-color: #06152A;
+    border-top: 1px solid #075EA8;
+    padding: 60px 70px 20px;
+}
+
+.footer-contenido {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 50px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-logo h2 {
+    color: #008CFF;
+    font-size: 30px;
+    margin-top: 0;
+}
+
+.footer-logo p {
+    color: #CBD5E1;
+    font-size: 16px;
+}
+
+.footer-enlaces {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-enlaces h3 {
+    color: white;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.footer-enlaces a {
+    color: #CBD5E1;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-enlaces a:hover {
+    color: #008CFF;
+    transform: translateX(5px);
+}
+
+.footer-final {
+    border-top: 1px solid #075EA8;
+    margin-top: 50px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    color: #64748B;
+    font-size: 14px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
